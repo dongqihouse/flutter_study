@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_study/third/thrid_list_page.dart';
+import 'package:flutter_study/widgets/scrollable/scrollable_page.dart';
 import 'package:flutter_study/widgets/widgets_list_page.dart';
 
 void main() {
@@ -53,6 +54,15 @@ class MainMenuPage extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => WidgetsListPage(),
+              ),
+            ),
+          ),
+          ListTile(
+            title: Text('Scrollable专题'),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ScrollablePage(),
               ),
             ),
           ),
